@@ -1,0 +1,15 @@
+{
+   "dashboards": [
+      {
+          "alias": "UserToDos",
+          "view": "~/App_Plugins/UserToDos/usertodos.html",
+          "sections": ["user-dialog"]
+      }
+   ],
+	  "javascript": [
+        "~/App_Plugins/UserToDos/usertodos.controller.js"
+    ],
+    "css": [
+        "~/App_Plugins/UserToDos/usertodos.css"
+    ]
+}

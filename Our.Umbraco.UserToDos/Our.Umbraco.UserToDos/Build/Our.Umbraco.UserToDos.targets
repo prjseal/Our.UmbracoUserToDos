@@ -1,0 +1,27 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+	<PropertyGroup>
+		<UserToDosContentFilesPath>$(MSBuildThisFileDirectory)..\content\App_Plugins\UserToDos\**\*.*</UserToDosContentFilesPath>
+	</PropertyGroup>
+
+	<Target Name="CopyUserToDosAssets" BeforeTargets="Build">
+		<ItemGroup>
+			<UserToDosContentFiles Include="$(UserToDosContentFilesPath)" />
+		</ItemGroup>
+		<Message Text="Copying UserToDos files: $(UserToDosContentFilesPath) - #@(UserToDosContentFiles->Count()) files"  Importance="high" />
+		<Copy
+            SourceFiles="@(UserToDosContentFiles)"
+            DestinationFiles="@(UserToDosContentFiles->'$(MSBuildProjectDirectory)\App_Plugins\UserToDos\%(RecursiveDir)%(Filename)%(Extension)')"
+            SkipUnchangedFiles="true" />
+
+	</Target>
+
+	<Target Name="ClearUserToDosAssets" BeforeTargets="Clean">
+		<ItemGroup>
+			<UserToDosDir Include="$(MSBuildProjectDirectory)\App_Plugins\UserToDos\" />
+		</ItemGroup>
+		<Message Text="Clear old UserToDos data"  Importance="high" />
+		<RemoveDir Directories="@(UserToDosDir)"  />
+	</Target>
+
+</Project>

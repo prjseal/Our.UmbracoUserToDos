@@ -1,0 +1,40 @@
+.user-todo-dashboard ul {
+  list-style-type: none; /* get rid of bullet points on side of list items */
+  margin: 0;
+}
+
+.user-todo-dashboard .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.user-todo-dashboard h1 {
+  color: #fff;
+  font-size: 3rem;
+}
+
+.user-todo-dashboard .item {
+  background-color: #fff;
+  padding: 4px;
+  font-size: 1.1rem;
+}
+
+.user-todo-dashboard .item:first-child {
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+}
+
+.user-todo-dashboard .item:last-child {
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+}
+
+.user-todo-dashboard .checkbox {
+  top: -4px;
+  position: relative;
+}
+
+.user-todo-dashboard .checked {
+  text-decoration: line-through;
+}

@@ -1,0 +1,48 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net472;net5.0</TargetFrameworks>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <PackageId>Our.Umbraco.UserToDos</PackageId>
+    <Version>1.0</Version>
+
+    <PackageIconUrl></PackageIconUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://our.umbraco.com/packages/developer-tools/ui-examples/</PackageProjectUrl>
+    <PackageTags>Umbraco</PackageTags>
+
+    <RepositoryUrl>https://github.com/umbraco/UI-Examples</RepositoryUrl>
+
+    <Description>A simple to do list user dashboard for Umbraco</Description>
+    <PackageReleaseNotes>
+      1.0 - First Version
+    </PackageReleaseNotes>
+
+    <EmbedUntrackedSources>true</EmbedUntrackedSources>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+
+    <ContentTargetFolders>content</ContentTargetFolders>
+
+    <PackageOutputPath>../../output</PackageOutputPath>
+
+  </PropertyGroup>
+
+  <!-- package files -->
+  <ItemGroup>
+    <Content Include="App_Plugins\**\*.*">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>Always</CopyToPublishDirectory>
+    </Content>
+
+    <!-- target file to copy app_plugins in .netcore -->
+    <None Include="build\**\*.*">
+      <Pack>True</Pack>
+      <PackagePath>buildTransitive</PackagePath>
+    </None>
+
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,8 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/Our.Umbraco.UserToDos/.vs/Our.Umbraco.UserToDos
+/Our.Umbraco.UserToDos/Our.Umbraco.UserToDos/bin/Debug
+/Our.Umbraco.UserToDos/Our.Umbraco.UserToDos/obj
+/output
