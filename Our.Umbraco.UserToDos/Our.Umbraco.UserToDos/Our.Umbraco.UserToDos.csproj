@@ -8,12 +8,12 @@
     <PackageId>Our.Umbraco.UserToDos</PackageId>
     <Version>1.0</Version>
 
-    <PackageIconUrl></PackageIconUrl>
+    <PackageIconUrl>https://github.com/prjseal/Our.UmbracoUserToDos/blob/main/images/logo.png?raw=true</PackageIconUrl>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <PackageProjectUrl>https://our.umbraco.com/packages/developer-tools/ui-examples/</PackageProjectUrl>
+    <PackageProjectUrl>https://our.umbraco.com/packages/backoffice-extensions/ourumbracousertodos/</PackageProjectUrl>
     <PackageTags>Umbraco</PackageTags>
 
-    <RepositoryUrl>https://github.com/umbraco/UI-Examples</RepositoryUrl>
+    <RepositoryUrl>https://github.com/prjseal/Our.UmbracoUserToDos</RepositoryUrl>
 
     <Description>A simple to do list user dashboard for Umbraco</Description>
     <PackageReleaseNotes>
