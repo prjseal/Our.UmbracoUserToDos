@@ -27,7 +27,7 @@
     <ContentTargetFolders>content</ContentTargetFolders>
 
     <PackageOutputPath>../../output</PackageOutputPath>
-
+    <IncludeBuildOutput>false</IncludeBuildOutput>
   </PropertyGroup>
 
   <!-- package files -->
